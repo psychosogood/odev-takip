@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>OBS - Öğrenci Bilgilendirme Sistemi | Admin Paneli</title>
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <meta name="MobileOptimized" content="320">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->          
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME STYLES --> 
+    <link href="assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/themes/light.css" rel="stylesheet" type="text/css" id="style_color"/>
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body class="page-header-fixed">
+    <div class="aspNetHidden">
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3MTM1NDk4MDRkZBT3HIFudROf5uRo/BwOICl/X/uh+nx1bd4iDDThoVa/" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+    <!-- BEGIN HEADER -->   
+   <div class="header navbar navbar-inverse navbar-fixed-top">
+      <!-- BEGIN TOP NAVIGATION BAR -->
+      <div class="header-inner">
+         <!-- BEGIN LOGO -->  
+       <!-- BEGIN LOGO -->
+         <!-- END LOGO -->
+         <!-- BEGIN RESPONSIVE MENU TOGGLER --> 
+         <a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <img src="assets/img/menu-toggler.png" alt="">
+         </a> 
+         <!-- END RESPONSIVE MENU TOGGLER -->
+         <!-- BEGIN TOP NAVIGATION MENU -->
+        
+         <ul class="nav navbar-nav pull-right">
+            
+            <!-- BEGIN USER LOGIN DROPDOWN -->
+             <asp:Repeater ID="rptAdmin" runat="server">
+                 <ItemTemplate>
+                     <li class="dropdown user">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                       <span class="username"></span>
+                       <i class="icon-angle-down"></i>
+                       </a>
+                       <ul class="dropdown-menu">
+                          <li><a href="giris.html"><i class="icon-key"></i> Oturumu Kapat</a>
+                          </li>
+                       </ul>
+                    </li>
+                 </ItemTemplate>
+             </asp:Repeater>
+            
+            <!-- END USER LOGIN DROPDOWN -->
+         </ul>
+        
+         <!-- END TOP NAVIGATION MENU -->
+         <!-- END LOGO -->
+         <!-- BEGIN RESPONSIVE MENU TOGGLER --> 
+         <a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <img src="assets/img/menu-toggler.png" alt="" />
+         </a> 
+         <!-- END RESPONSIVE MENU TOGGLER -->
+         <!-- BEGIN TOP NAVIGATION MENU -->
+        
+         <!-- END TOP NAVIGATION MENU -->
+      </div>
+      <!-- END TOP NAVIGATION BAR -->
+   </div>
+   <!-- END HEADER -->
+   <div class="clearfix"></div>
+    <div class="page-container">
+      <!-- BEGIN SIDEBAR -->
+      <div class="page-sidebar navbar-collapse collapse">
+         <!-- BEGIN SIDEBAR MENU -->        
+         <ul class="page-sidebar-menu">
+            <li>
+               <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+               <div class="sidebar-toggler hidden-phone"></div>
+               <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+            </li>
+         <li>&nbsp;</li>
+          
+           <li>
+               <a href="index.html">
+               <i class="icon-user"></i>
+               <span class="title">Öğrenciler</span>
+			   </a>
+            </li>
+
+             <li>
+               <a href="odevler.html">
+               <i class="icon-file"></i>
+               <span class="title">Ödevler</span>
+			   </a>
+            </li>
+         </ul>
+         <!-- END SIDEBAR MENU -->
+      </div>
+      <!-- END SIDEBAR -->
+      <!-- BEGIN PAGE -->
+      <div class="page-content">
+
+            <div class="col-md-12">
+                    <h2>Ödevler</h2>
+                    <table class="table">
+                            <thead>
+                                <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Ödev Adı</th>
+                                <th scope="col">Ödev Son Teslim Tarihi</th>
+                                <th scope="col">Ödev Konusu</th>
+                                <th scope="col">Ödev Açıklaması</th>
+                                <th scope="col">Ödev Alma Tercihi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th scope="row">1</th>
+                                <td>Ödev Adı</td>
+                                <td>Ödev Son Teslim Tarihi</td>
+                                <td>Ödev Konusu</td>
+                                <td>Ödev Açıklaması</td>
+                                <td>Ödev Alma Tercihi</td>
+
+                                </tr>
+                                <tr>
+                                <th scope="row">2</th>    
+                                <td>Ödev Adı</td>
+                                <td>Ödev Son Teslim Tarihi</td>
+                                <td>Ödev Konusu</td>
+                                <td>Ödev Açıklaması</td>
+                                <td>Ödev Alma Tercihi</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">3</th>    
+                                <td>Ödev Adı</td>
+                                <td>Ödev Son Teslim Tarihi</td>
+                                <td>Ödev Konusu</td>
+                                <td>Ödev Açıklaması</td>
+                                <td>Ödev Alma Tercihi</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-md-12">
+                    <h2>Yeni Kayıt</h2>
+                    <label>Ödev Adı</label>
+                    <input type="text" class="form-control">
+                       <label>Ödev Son Teslim Tarihi</label>
+                       <input type="text" class="form-control">
+                       <label>Ödev Konusu</label>
+                       <input type="text" class="form-control">
+                      <label>Ödev Açıklaması</label>
+                      <input type="text" class="form-control">
+                      <label>Ödev Alma Tercihi</label>
+                      <input type="text" class="form-control">
+                    <br />
+                    <button type="submit" class="btn btn-success">Kaydet</button>
+                  </div>
+
+
+        </div>
+        <!-- END PAGE -->    
+     </div>
+     <!-- END CONTAINER -->
+     <!-- BEGIN FOOTER -->
+     <div class="footer">
+        <div class="footer-inner">
+           2017 &copy; OBS - Öğrenci Bilgilendirme Sistemi | Admin Paneli
+        </div>
+        <div class="footer-tools">
+           <span class="go-top">
+           <i class="icon-angle-up"></i>
+           </span>
+        </div>
+     </div>
+     <!-- END FOOTER -->
+     <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+     <!-- BEGIN CORE PLUGINS -->   
+     <!--[if lt IE 9]>
+     <script src="assets/plugins/respond.min.js"></script>
+     <script src="assets/plugins/excanvas.min.js"></script> 
+     <![endif]-->   
+     <script src="assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
+     <script src="assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+     <!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+     <script src="assets/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>      
+     <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+     <script src="assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript" ></script>
+     <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+     <script src="assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>  
+     <script src="assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
+     <script src="assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
+     <script type="text/javascript" src="assets/plugins/ckeditor/ckeditor.js"></script>  
+     <!-- END CORE PLUGINS -->
+     <script src="assets/scripts/app.js"></script>      
+     <script>
+       jQuery(document).ready(function () {
+         App.init();
+       });
+     </script>
+     <!-- END JAVASCRIPTS -->
+  </body>
+  </html>
